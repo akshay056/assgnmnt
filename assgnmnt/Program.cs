@@ -136,11 +136,19 @@ namespace assgnmnt
 
 
             //6.
-            Prob6 p=new Prob6();
-            Console.WriteLine("Enter the numbers:");
-            List<int> sequence = p.ReadIntegers();
-            Console.WriteLine("The sum and average of the numbers is: " + p.SumAndAverage(sequence));
+            //Prob6 p=new Prob6();
+            //Console.WriteLine("Enter the numbers:");
+            //List<int> sequence = p.ReadIntegers();
+            //Console.WriteLine("The sum and average of the numbers is: " + p.SumAndAverage(sequence));
 
+            //7.
+            var emps = new Emp[] {
+            new Emp { empid=22554,name="Darshith",Sal=600000, Dept="Azure MCS",DOJ = new DateTime(2020, 6, 22)},
+            new Emp { empid=22559,name="Sreedhar",Sal=600000, Dept="D365",DOJ = new DateTime(2021, 6, 22)},
+            new Emp { empid=22563,name="Akshay",Sal=600000, Dept="D365",DOJ = new DateTime(2022, 6, 22)}
+            };
+            foreach (var e in emps)
+                Console.WriteLine(e.ToString());
         }
     }
 }
