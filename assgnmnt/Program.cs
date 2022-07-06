@@ -13,12 +13,12 @@ namespace assgnmnt
             //1. and 2.
 
             //DateTime CurrentDay = DateTime.Now;
-            //Console.Write("Enter your date of birth ");
-            //int month = int.Parse(Console.ReadLine());
+            //Console.Write("Enter your date of birth (dd/mm/yyyy) : ");
             //int day = int.Parse(Console.ReadLine());
+            //int month = int.Parse(Console.ReadLine());
             //int year = int.Parse(Console.ReadLine());
             //DateTime dob = new DateTime(year, month, day);
-            //int age=CurrentDay.Year - dob.Year;
+            //int age = CurrentDay.Year - dob.Year;
             //int AgeAfterTen = age + 10;
             //Console.WriteLine($"Current day is:{CurrentDay}");
             //Console.WriteLine($"Current age is : {age}");
@@ -27,7 +27,7 @@ namespace assgnmnt
 
 
             ////3.
-            //Console.WriteLine("Enter the number : ");
+            //Console.WriteLine("Enter a four digit number : ");
             //int number = int.Parse(Console.ReadLine());
             //Prob3 s = new Prob3();
             //Console.WriteLine("The sum of the digits is :{0}", s.AddDigits(number));
@@ -63,7 +63,6 @@ namespace assgnmnt
 
 
             //5.
-
             //int[] Numbers = new int[5];
             //for (int i = 0; i <= 4; i++)
             //{
@@ -118,7 +117,7 @@ namespace assgnmnt
             //}
 
 
-
+            //Tried solving this way but was not getting output.
             //List<int> intList = new List<int>() { 1, 2, -3, 4, 5 };
             //List<int> Slist = new List<int>();
             //int n = intList.Count; Console.WriteLine(n);
@@ -134,21 +133,46 @@ namespace assgnmnt
             //}
 
 
-
             //6.
             //Prob6 p=new Prob6();
             //Console.WriteLine("Enter the numbers:");
             //List<int> sequence = p.ReadIntegers();
             //Console.WriteLine("The sum and average of the numbers is: " + p.SumAndAverage(sequence));
 
+
             //7.
-            var emps = new Emp[] {
-            new Emp { empid=22554,name="Darshith",Sal=600000, Dept="Azure MCS",DOJ = new DateTime(2020, 6, 22)},
-            new Emp { empid=22559,name="Sreedhar",Sal=600000, Dept="D365",DOJ = new DateTime(2021, 6, 22)},
-            new Emp { empid=22563,name="Akshay",Sal=600000, Dept="D365",DOJ = new DateTime(2022, 6, 22)}
-            };
-            foreach (var e in emps)
-                Console.WriteLine(e.ToString());
+            //var emps = new EmpWorkingdays[] {
+            //new EmpWorkingdays { empid=22554,name="Darshith",Sal=600000, Dept="Azure MCS",DOJ = new DateTime(2020, 6, 22)},
+            //new EmpWorkingdays { empid=22559,name="Sreedhar",Sal=600000, Dept="D365",DOJ = new DateTime(2021, 6, 22)},
+            //new EmpWorkingdays { empid=22563,name="Akshay",Sal=600000, Dept="D365",DOJ = new DateTime(2022, 6, 22)}
+            //};
+            //foreach (var e in emps)
+            //    Console.WriteLine(e.ToString());
+
+
+            //9.
+            //Worker h = new Worker();
+            //h.FirstName = "akshay";
+            //h.LastName = "upadhya";
+            //h.wage = 1311434;
+            //h.hoursWorked = 2;
+            //Console.WriteLine(h.print());
+
+
+            //10.
+            //Person p = new Person();
+            //Console.WriteLine("enter name: ");
+            //p.name = Console.ReadLine();
+            //Console.WriteLine("enter date of birth");
+            ////p.Dob = new DateTime(2000, 5, 6);
+            //p.Dob = DateTime.Parse(Console.ReadLine());
+            //Console.WriteLine("enter address: ");
+            //p.address = Console.ReadLine();
+            //Console.WriteLine("enter marriage status: ");
+            //p.status = Console.ReadLine();
+            //Console.WriteLine($"Can he marry ? {p.CanMarry()}");
+            //Console.WriteLine(p.PrintDetails());
+
         }
     }
 }
